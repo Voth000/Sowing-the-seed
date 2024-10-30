@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta name="google-site-verification" content="XuVJsdbgmTRePoSfbI4uWDJxmLOq2B8K8iJbrMWnsUs" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" 
+        content="#000000" 
+        media="(prefers-color-scheme: dark)">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link href="style.css" rel="stylesheet">
+        <title>Sowing the seeds</title>
+       
+            
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+    </head>
+<body>
+
+  <div id="inactivityOverlay" style="display: none;"></div>
+<div id="inactivityPopup" style="display: none;">
+  <p>You have been inactive for a while.</p>
+  <p>Page will refresh in <span id="inactivityCountdown">10</span> seconds.</p>
+  <button id="cancelInactivityButton">Cancel</button>
+</div>
+
+    <div id="starContainer">
+      <div id="headRectangle"> You are a sparking soul</div>
+    
+    </div>
+   
+  <div class="new">
+  <canvas id="scribbleCanvas"> </canvas>
+  <video class="input_video" ></video>
+
+    </div><!-- Rectangle that follows the head -->
+    <div class="a1" id="first">
+    <h2> Gieo Hạt </h2>
+    <button onclick="showAlert()">About the project</button>
+    <div style="display: none;" id="switch">
+        <h4>Hide the UI</h4>
+    <label class="switch"> 
+        <input type="checkbox" id="toggleButton">
+        <span class="slider"></span>
+      </label>
+      
+    </div>
+</div>
+
+
+<div class="a2" id="gui">
+    <div class="pcss" id="p1"> 
+        <h5> Chọn khu vườn của bạn</h5>
+        <div id="gap1">
+<button id="button1"> I</button> 
+<button id="button2"> II</button> 
+</div>
+</div>
+
+<div  class="pcss" id="p2"> 
+  
+    <div id="gap"> 
+    <input type="color" id="colorPicker" value="#ffffff">
+    <input type="color" id="colorPicker2" value="#ada9e5">
+    <h5> Đổi màu </h5>
+    </div>
+</div>
+
+
+
+<div style="display: none;" class="pcss" id="p4">
+<h5></h5>
+<input  type="color" id="colorPicker5" value="#ff0000">
+
+</div>
+
+<div style="display: none;" class="pcss" id="p5">
+<h5></h5>
+<form id="textForm">
+    <label for="textInput">What are you thinking? </label>
+    <textarea id="textInput" name="textInput">Spill the beans...</textarea>
+    
+    <button type="submit">Add your thoughts</button>
+  </form>
+<span>Visualising with your mind's eyes </span>
+<input type="color" id="colorPicker1" value="#11ff00"> 
+
+<div class="range-container"> 
+    <label for="opacityRange"></label>
+<input type="range" min="0.1" max="0.5" step="0.1" value="0.3" id="opacityRange">    
+<label for="sizeRange"></label>
+<input type="range" min="10" max="25" value="20" id="sizeRange">
+
+</div>
+</div>
+
+<button id="refreshButton">Bắt đầu lại</button>
+</div>
+
+<div class="a4" id="gui">
+  <h5> Cách tương tác </h5>
+  <span id="mt"> 1. Di chuyển để tạo họa tiết ngẫu nhiên <br> 2. Click lên 3D Models để trồng cây <br> 3. Scroll mouse wheel dể zoom </span>
+  <span id="mb"> Sử dụng ngón tay để thu nhỏ & phóng to</span>
+</div>
+
+<div class="a3" id="shot">
+   <div id="social">
+        <h5>Tác giả</h5>
+        <button onclick="window.open('https://www.instagram.com/voth000/','vothDm');">@voth000</button>
+    </div>
+      <div id="gth">
+<span>Tác phẩm được tạo ra bởi @Voth000 dành cho triển lãm Ô 2024: "HOPE - Between Despair & Renewal"</span>
+      </div>
+     
+</div>
+
+<div  class="poster">
+    <div class="container">
+        
+      </div>
+      <div id="three-container"></div>
+
+<div id="alertContainer"></div>
+
+
+
+</div>
+
+<div id="pop">
+
+  <div id="overlay" class="overlay" onclick="hideAlert()"></div>
+  <div id="popup" class="popup">
+    <h3>"Gieo Hạt Ánh Sáng vào Cuộc Sống, Gặt Hái Trái Ngọt để Tái Sinh."</h3>
+    <h5>Giới thiệu về dự án</h5>
+    <span >Đây là một series website về Rebirth & Hope, 
+      phiên bản đầu tiên tham gia triển lãm của @bapxao.oi: "Light Up the Burnt Out" vào tháng 08/2023 Và hiện tại, phiên bản thứ hai tham gia vào triển lãm Ô 2024: "HOPE - Between Despair & Renewal"
+    </span>
+        <h5>Về tác phẩm</h5>
+        <span>
+          Sowing the Seeds là một tác phẩm sắp đặt tương tác với thông điệp "Gieo Hạt Ánh Sáng và Cuộc Sống, Gặt Hái Trái Ngọt Tái Sinh." 
+
+          Được tạo ra bởi @voth000, "Sowing the Seeds" cho phép người xem tương tác với các vật thể 3D tan chảy rồi lại trở lại với hình dáng ban đầu tượng trưng cho tương quan giữa sự sống và cái chết, vòng tuần hoàn của 1 đời người, được sinh ra và mất đi, vấp ngã và đứng lên.
+         
+        </span>
+        
+        <h5>Gieo Hạt</h5>
+        <span>
+          Người xem có thể trồng hoa trên vật thể 3D tỏa sáng lấp lánh rồi tan chảy, và di chuyển xung quanh tác phẩm, 
+          tạo ra những họa tiết ngẫu nhiên nhưng hoàn chỉnh. 
+          Tác phẩm nhắc nhở rằng cuộc sống của mỗi người đều không hoàn hảo và khác biệt, 
+          nhưng mỗi chúng ta là những cá thể đặc biệt và đều đang tìm kiếm cơ hội tái tạo và làm mới bản thân để tìm được ánh sáng của chính mình.
+      
+        </span>
+        
+        <h5>Cảm ơn bạn đã đến triển lãm và đọc hết ghi chú này</h5>
+        <p style="font-size: 10px; text-align:right; ">
+            "Click outside the box to close."
+        </p>
+      
+        
+    </p>
+  </div>
+</div>
+<div id="up" class="up">
+    <div class="up-content">
+      <h2>Cảm ơn bạn đã ghé thăm vườn bông của chính mình </h2>
+      <p>Hãy click vào 3D model phía sau popup này <br> để bắt đầu gieo hạt trong khu vườn của bạn.</p>
+    </div>
+  </div>
+
+
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+        <script type="importmap">
+          {
+            "imports": {
+              "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+              "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/"
+            }
+          }
+        </script>
+<script src="index.js" type="module"></script>
+<script src="./main.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/noisejs@2.1.0/index.min.js
+"></script>
+
+</body>
+</html>
