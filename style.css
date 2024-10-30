@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Quicksand:wght@300..700&display=swap');
 
-.italiana-regular {
-  font-family: "Italiana", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 :root {
   --col: 255, 255, 255; /* Default color (white) */
@@ -837,7 +832,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 90%;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.929);
-  font-family: 'Italiana';
+  font-family: 'Cormorant';
  color: rgba(255, 255, 255, 0.325);
   margin: 0px;
   background-clip: text;
