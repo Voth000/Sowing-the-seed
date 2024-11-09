@@ -1,16 +1,3 @@
-"Burnout and Sowings the flowers" is an interactive website project featured in the virtual expo "Light Up the Burnt Out" by @bapxao.oi. It's a digital sanctuary where blooming flowers represent transformation and your 3D melting avatars reflect the evolving nature of burnout.
-Engage with the html canvas, plant flowers on your avatars, and express yourself creatively. 
-
-This interactive experience fosters self-reflection, introspection, and the exploration of resilience and growth. As you delve into this transformative journey, you will come to realize that burnout is not an endpoint but a new beginning.
-
-I perceive this phase as a time to plant the seeds of personal growth, allowing individuals to explore inner mindfulness and nurture a profound self-love. 
-
-Link to “Burnout and Sowings the flowers"  website (on bio) 
-or 👉
- https://voth000.github.io/bhn/
-
-Link to “Light up the Burnt Out” virtual expo
-👉  
-https://app.gather.town/app/CPryEoa7uMCIhdvR/BHN_Light%20Up%20the%20BurntOut
-
-
+Đây là một series website về Rebirth & Hope, phiên bản đầu tiên tham gia triển lãm của @bapxao.oi: "Light Up the Burnt Out" vào tháng 08/2023 Và hiện tại, phiên bản thứ hai tham gia vào triển lãm Ô 2024: "HOPE - Between Despair & Renewal" Sowing the Seeds là một tác phẩm sắp đặt tương tác với thông điệp "Gieo Hạt Ánh Sáng và Cuộc Sống, Gặt Hái Trái Ngọt Tái Sinh." Được tạo ra bởi @voth000, "Sowing the Seeds" cho phép người xem tương tác với các vật thể 3D tan chảy rồi lại trở lại với hình dáng ban đầu tượng trưng cho tương quan giữa sự sống và cái chết, vòng tuần hoàn của 1 đời người, được sinh ra và mất đi, vấp ngã và đứng lên. Người xem có thể trồng hoa trên vật thể 3D tỏa sáng lấp lánh rồi tan chảy, và di chuyển xung quanh tác phẩm, tạo ra những họa tiết ngẫu nhiên nhưng hoàn chỉnh. Tác phẩm nhắc nhở rằng cuộc sống của mỗi người đều không hoàn hảo và khác biệt,  nhưng mỗi chúng ta là những cá thể đặc biệt và đều đang tìm kiếm cơ hội tái tạo và làm mới bản thân để tìm được ánh sáng của chính mình.
+   Cảm ơn bạn đã đến triển lãm và đọc hết ghi chú này
+   
