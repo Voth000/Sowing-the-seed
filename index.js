@@ -393,9 +393,9 @@ raycaster.setFromCamera(mouse, camera);
 
 const intersectObjects = [];
 
-if (tim.visible) {
-  intersectObjects.push(tim);
-}
+//if (tim.visible) {
+ // intersectObjects.push(tim);
+//}
 
 if (tim1.visible) {
   intersectObjects.push(tim1);
@@ -436,7 +436,7 @@ setInterval(() => {
     scene.remove(gltf2);
     scene.add(gltf3);
   } else if (currentGlb === gltf3) {
-    if (gltf4Count < 20) {
+    if (gltf4Count < 10) {
       currentGlb = gltf4;
       scene.remove(gltf3);
       scene.add(gltf4);

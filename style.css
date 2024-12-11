@@ -89,7 +89,7 @@ transform: translate(-50%, -50%);
     position: absolute;
    color: var(--ttx);
    background: linear-gradient(to bottom right, rgba(var(--col), 0.91) 5%, rgba(var(--col), 0.00) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(var(--col), 0.91) 5%, rgba(var(--col), 0.00) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(var(--col), 0.91) 5%, rgba(var(--col), 0.00) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(var(--col), 0.91) 5%, rgba(var(--col), 0.00) 50%) top right / 50% 50% no-repeat;
-
+font-size: 22px;
      /* Center the rectangle on the head */
 }
 .input_video {
@@ -161,9 +161,9 @@ form {
 
 
   .a4 span {
-    line-height: 14px;
-    font-size: 10px;
-padding: 6px;
+   
+    font-size: 24px;
+    padding: 12px;
     border-radius: var(--border);
     background-color: var(--bg);
     border: var(--bor);
@@ -177,7 +177,7 @@ color: var(--ttx);
     color: var(--ttx);
     padding: 4px !important;
     width: 60%;
-   
+    font-size: 22px;
 
   }
 
@@ -186,10 +186,10 @@ color: var(--ttx);
     display: grid;
     position: absolute;
     z-index: 2;
-left: 10%;
+left: 20%;
     grid-gap: 2px;
  top: 0;
- padding: 0px;
+ padding: 2em;
   }
 
   
@@ -234,7 +234,7 @@ backdrop-filter: var(--fil);
     box-shadow: rgba(178, 178, 252, 0.224) 2px 2px 1px 0px;
     gap: 8px;
     display: flex;
-    font-size: 1em;
+    font-size: 2em;
     line-height: unset;
     padding: 1em;
     justify-content: center;
@@ -264,7 +264,7 @@ backdrop-filter: var(--fil);
 
     grid-gap: 8px;
     display: flex;
-    font-size: 1em;
+    font-size: 2em;
     line-height: unset;
     padding: 0.5em;
     justify-content: center;
@@ -503,6 +503,7 @@ input[type=range]::-webkit-slider-thumb {
 
 
 h5 {
+  font-size: 22px;
   color: var(--ttx);
   position: relative;
   margin: 0px !important;
@@ -571,7 +572,7 @@ label {
 }
 
 #p1.pcss h5 {
-  font-size: 12px;
+  font-size: 22px;
   word-break: break-all;
 }
 
@@ -595,6 +596,7 @@ transition: all 0.3s ease;
   line-height: unset;
   position: absolute;
   z-index: 4;
+  padding: 2em;
 }
 
 input {
@@ -602,8 +604,8 @@ input {
 }
 
 input[type=color]{
-	width: 32px;
-	height: 24px;
+	width: 44px;
+	height: 28px;
 	border: none;
   outline: none;
 	background: none;
@@ -735,7 +737,7 @@ button#bhn {
 }
 
 #social h5 {
-  font-size: 10px;
+  font-size: 22px;
  padding-bottom: 2px !important;
 }
 
@@ -801,7 +803,7 @@ color: var(--ttx);
 }
 
 #gth span {
-  font-size: 10px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.415);
 }
 
@@ -821,13 +823,13 @@ border-radius: var(--border);
   width: 8%;
   position: absolute;
   z-index: 3;
-  padding: 0.75em;
+  padding: 4em;
   display: grid;
   grid-gap: 1em;
 }
 
 #first h2 {
-  font-size: 4em;
+  font-size: 8em;
 font-style: normal;
 font-weight: 400;
 line-height: 90%;
@@ -879,6 +881,7 @@ text-align: left;
 }
 
 .up-content p {
+  font-size: 20px;
   margin-bottom: 0;
 }
 
@@ -991,7 +994,7 @@ text-align: left;
   display: none ;
 }
 #p1.pcss h5 {
-  font-size: 10px;
+  font-size: 22px;
 }
 
 label, span {
@@ -1032,7 +1035,7 @@ button {
   }
   
   .a4 span {
-    line-height: 12px;
+    line-height: auto;
    width: 20%;
    padding: 4px;
   }
