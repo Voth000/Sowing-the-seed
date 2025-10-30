@@ -19,13 +19,6 @@
     </head>
 <body>
 
-  <div id="inactivityOverlay" style="display: none;"></div>
-<div id="inactivityPopup" style="display: none;">
-  <p>You have been inactive for a while.</p>
-  <p>Page will refresh in <span id="inactivityCountdown">10</span> seconds.</p>
-  <button id="cancelInactivityButton">Cancel</button>
-</div>
-
     <div id="starContainer">
       <div id="headRectangle"> You are a sparking soul</div>
     
@@ -164,12 +157,14 @@
   </div>
 </div>
 <div id="up" class="up">
-    <div class="up-content">
-      <h2>Cảm ơn bạn đã ghé thăm vườn bông của chính mình </h2>
-      <p>Hãy click vào 3D model phía sau popup này <br> để bắt đầu gieo hạt trong khu vườn của bạn.</p>
-    </div>
+  <div id="up-background" style="position:absolute;top:0;left:0;width:100vw;height:100vh;z-index:0;"></div>
+  <div class="up-content">
+    <h2>Cảm ơn bạn đã ghé thăm vườn bông của chính mình </h2>
+    <p>Hãy click vào 3D model phía sau popup này <br> để bắt đầu gieo hạt trong khu vườn của bạn.</p>
   </div>
+</div>
 
+<div id="simple-loader">Loading, please wait...</div>
 
   <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
         <script type="importmap">
@@ -180,11 +175,20 @@
             }
           }
         </script>
-<script src="index.js" type="module"></script>
-<script src="./main.js"></script>
+<script src="bundle.js" type="module"></script>
 <script src="
 https://cdn.jsdelivr.net/npm/noisejs@2.1.0/index.min.js
 "></script>
-
+<script>
+window.addEventListener("DOMContentLoaded", function() {
+  function doneLoading() {
+    var loader = document.getElementById('simple-loader');
+    if (loader) loader.parentNode.removeChild(loader);
+  }
+  // Assume bundle.js will signal when loaded, fallback to timer
+  window.addEventListener('bundleReady', doneLoading);
+  setTimeout(doneLoading, 3500); // fallback after 3.5s
+});
+</script>
 </body>
 </html>
