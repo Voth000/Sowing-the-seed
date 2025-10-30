@@ -12,10 +12,14 @@
         <title>Sowing the seeds</title>
        
             
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh"></script>
-<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils" defer></script>
+    <link rel="preload" href="bundle.js" as="script">
+    <link rel="preload" href="Crozet-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
     </head>
 <body>
 
@@ -30,8 +34,8 @@
 
     </div><!-- Rectangle that follows the head -->
     <div class="a1" id="first">
-    <h2> Gieo Hạt </h2>
-    <button onclick="showAlert()">About the project</button>
+    <h2>Sowing Seeds</h2>
+    <button id="aboutProjectBtn">About the project</button>
     <div style="display: none;" id="switch">
         <h4>Hide the UI</h4>
     <label class="switch"> 
@@ -45,7 +49,7 @@
 
 <div  class="a2" id="gui">
     <div  style="display: none;" class="pcss" id="p1"> 
-        <h5> Chọn khu vườn của bạn</h5>
+        <h5>Choose your garden</h5>
         <div id="gap1">
 <button id="button1"> I</button> 
 <button id="button2"> II</button> 
@@ -57,7 +61,7 @@
     <div id="gap"> 
     <input type="color" id="colorPicker" value="#ffffff">
     <input type="color" id="colorPicker2" value="#ada9e5">
-    <h5> Đổi màu </h5>
+    <h5>Change color</h5>
     </div>
 </div>
 
@@ -89,22 +93,22 @@
 </div>
 </div>
 
-<button id="refreshButton">Bắt đầu lại</button>
+<button id="refreshButton">Restart</button>
 </div>
 
 <div class="a4" id="gui">
-  <h5> Cách tương tác </h5>
-  <span id="mt"> 1. Di chuyển để tạo họa tiết ngẫu nhiên <br> 2. Click lên 3D Models để trồng cây <br> 3. Scroll mouse wheel dể zoom </span>
-  <span id="mb"> Sử dụng ngón tay để thu nhỏ & phóng to</span>
+  <h5>How to interact</h5>
+  <span id="mt"> 1. Move to create random patterns <br> 2. Click on 3D Models to plant trees <br> 3. Scroll mouse wheel to zoom </span>
+  <span id="mb"> Use your fingers to pinch & zoom</span>
 </div>
 
 <div class="a3" id="shot">
    <div id="social">
-        <h5>Tác giả</h5>
+        <h5>Author</h5>
         <button onclick="window.open('https://www.instagram.com/voth000/','vothDm');">@voth000</button>
     </div>
       <div id="gth">
-<span>Tác phẩm được tạo ra bởi @Voth000 dành cho triển lãm Ô 2024: "HOPE - Between Despair & Renewal"</span>
+<span>This artwork is created by @Voth000 for the O 2024 exhibition: "HOPE - Between Despair & Renewal"</span>
       </div>
      
 </div>
@@ -125,29 +129,23 @@
 
   <div id="overlay" class="overlay" onclick="hideAlert()"></div>
   <div id="popup" class="popup">
-    <h3>"Gieo Hạt Ánh Sáng vào Cuộc Sống, Gặt Hái Trái Ngọt để Tái Sinh."</h3>
-    <h5>Giới thiệu về dự án</h5>
-    <span >Đây là một series website về Rebirth & Hope, 
-      phiên bản đầu tiên tham gia triển lãm của @bapxao.oi: "Light Up the Burnt Out" vào tháng 08/2023 Và hiện tại, phiên bản thứ hai tham gia vào triển lãm Ô 2024: "HOPE - Between Despair & Renewal"
-    </span>
-        <h5>Về tác phẩm</h5>
-        <span>
-          Sowing the Seeds là một tác phẩm sắp đặt tương tác với thông điệp "Gieo Hạt Ánh Sáng và Cuộc Sống, Gặt Hái Trái Ngọt Tái Sinh." 
-
-          Được tạo ra bởi @voth000, "Sowing the Seeds" cho phép người xem tương tác với các vật thể 3D tan chảy rồi lại trở lại với hình dáng ban đầu tượng trưng cho tương quan giữa sự sống và cái chết, vòng tuần hoàn của 1 đời người, được sinh ra và mất đi, vấp ngã và đứng lên.
-         
-        </span>
-        
-        <h5>Gieo Hạt</h5>
-        <span>
-          Người xem có thể trồng hoa trên vật thể 3D tỏa sáng lấp lánh rồi tan chảy, và di chuyển xung quanh tác phẩm, 
-          tạo ra những họa tiết ngẫu nhiên nhưng hoàn chỉnh. 
-          Tác phẩm nhắc nhở rằng cuộc sống của mỗi người đều không hoàn hảo và khác biệt, 
-          nhưng mỗi chúng ta là những cá thể đặc biệt và đều đang tìm kiếm cơ hội tái tạo và làm mới bản thân để tìm được ánh sáng của chính mình.
+    <h3>"Sow the Seeds of Light into Life, Reap the Sweet Fruit for Rebirth."</h3>
+    <h5>About the project</h5>
+    <span>This is a series of websites about Rebirth & Hope, the first version participated in the exhibition of @bapxao.oi: "Light Up the Burnt Out" in August 2023. Currently, the second version participated in the O 2024 exhibition: "HOPE - Between Despair & Renewal"</span>
+    <h5>About the artwork</h5>
+    <span>
+      Sowing the Seeds is an interactive installation with the message "Sow the Seeds of Light and Life, Reap the Fruits of Rebirth."
       
-        </span>
-        
-        <h5>Cảm ơn bạn đã đến triển lãm và đọc hết ghi chú này</h5>
+      Created by @voth000, "Sowing the Seeds" allows viewers to interact with 3D objects that melt and then return to their original shapes, representing the correlation between life and death, the cycle of a human life, being born and dying, falling and rising.
+    </span>
+    <h5>Sowing Seeds</h5>
+    <span>
+      Viewers can plant flowers on the 3D object shining brightly and melting, and move around the artwork,
+      creating random but complete patterns.
+      The work reminds that everyone's life is imperfect and different,
+      but each of us is a special individual, always seeking renewal and rebirth to find our own light.
+    </span>
+    <h5>Thank you for coming to the exhibition and reading this note</h5>
         <p style="font-size: 10px; text-align:right; ">
             "Click outside the box to close."
         </p>
@@ -159,8 +157,8 @@
 <div id="up" class="up">
   <div id="up-background" style="position:absolute;top:0;left:0;width:100vw;height:100vh;z-index:0;"></div>
   <div class="up-content">
-    <h2>Cảm ơn bạn đã ghé thăm vườn bông của chính mình </h2>
-    <p>Hãy click vào 3D model phía sau popup này <br> để bắt đầu gieo hạt trong khu vườn của bạn.</p>
+    <h2>Thank you for visiting your own flower garden</h2>
+    <p>Please click on the 3D model behind this popup <br> to start sowing the seeds in your garden.</p>
   </div>
 </div>
 
@@ -175,10 +173,8 @@
             }
           }
         </script>
-<script src="bundle.js" type="module"></script>
-<script src="
-https://cdn.jsdelivr.net/npm/noisejs@2.1.0/index.min.js
-"></script>
+<script src="bundle.js" type="module" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/noisejs@2.1.0/index.min.js" defer></script>
 <script>
 window.addEventListener("DOMContentLoaded", function() {
   function doneLoading() {

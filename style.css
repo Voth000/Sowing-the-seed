@@ -62,7 +62,7 @@ transform: translate(-50%, -50%);
     position: absolute;
    color: var(--ttx);
    background: linear-gradient(to bottom right, rgba(var(--col), 0.91) 5%, rgba(var(--col), 0.00) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(var(--col), 0.91) 5%, rgba(var(--col), 0.00) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(var(--col), 0.91) 5%, rgba(var(--col), 0.00) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(var(--col), 0.91) 5%, rgba(var(--col), 0.00) 50%) top right / 50% 50% no-repeat;
-font-size: 22px;
+font-size: 14px;
      /* Center the rectangle on the head */
 }
 .input_video {
@@ -135,8 +135,8 @@ form {
 
   .a4 span {
    
-    font-size: 24px;
-    padding: 12px;
+    font-size: 14px;
+    padding: 8px;
     border-radius: var(--border);
     background-color: var(--bg);
     border: var(--bor);
@@ -150,7 +150,7 @@ color: var(--ttx);
     color: var(--ttx);
     padding: 4px !important;
     width: 60%;
-    font-size: 22px;
+    font-size: 14px;
 
   }
 
@@ -162,7 +162,7 @@ color: var(--ttx);
 left: 20%;
     grid-gap: 2px;
  top: 0;
- padding: 2em;
+ padding: 1em;
   }
 
   
@@ -207,7 +207,7 @@ backdrop-filter: var(--fil);
     box-shadow: rgba(178, 178, 252, 0.224) 2px 2px 1px 0px;
     gap: 8px;
     display: flex;
-    font-size: 2em;
+    font-size: 1em;
     line-height: unset;
     padding: 1em;
     justify-content: center;
@@ -237,7 +237,7 @@ backdrop-filter: var(--fil);
 
     grid-gap: 8px;
     display: flex;
-    font-size: 2em;
+    font-size: 1em;
     line-height: unset;
     padding: 0.5em;
     justify-content: center;
@@ -463,8 +463,8 @@ input[type=range]::-webkit-slider-runnable-track {
 input[type=range]::-webkit-slider-thumb {
   border: 2px solid rgb(0 144 251);
   border-radius: var(--border);
-  height: 18px;
-  width: 18px;
+  height: 14px;
+  width: 14px;
   background: rgb(0 144 251);
   cursor: pointer;
   -webkit-appearance: none;
@@ -476,7 +476,7 @@ input[type=range]::-webkit-slider-thumb {
 
 
 h5 {
-  font-size: 22px;
+  font-size: 14px;
   color: var(--ttx);
   position: relative;
   margin: 0px !important;
@@ -491,7 +491,7 @@ max-width: 100%;
   display: grid;
   background-blend-mode: luminosity;
  
-  padding: 0.75em;
+  padding: 8px;
   border-radius: var(--border);
 
   justify-content: center;
@@ -545,7 +545,7 @@ label {
 }
 
 #p1.pcss h5 {
-  font-size: 22px;
+  font-size: 14px;
   word-break: break-all;
 }
 
@@ -569,7 +569,7 @@ transition: all 0.3s ease;
   line-height: unset;
   position: absolute;
   z-index: 4;
-  padding: 2em;
+  padding: 1em;
 }
 
 input {
@@ -642,7 +642,7 @@ input[type="color"]::-webkit-color-swatch {
   position: relative;
   display: inline-block;
   width: 40px;
-  height: 24px;
+  height: 14px;
 }
 
 .switch input {
@@ -710,7 +710,7 @@ button#bhn {
 }
 
 #social h5 {
-  font-size: 22px;
+  font-size: 14px;
  padding-bottom: 2px !important;
 }
 
@@ -776,7 +776,7 @@ color: var(--ttx);
 }
 
 #gth span {
-  font-size: 18px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.415);
 }
 
@@ -802,7 +802,7 @@ border-radius: var(--border);
 }
 
 #first h2 {
-  font-size: 8em;
+  font-size: em;
 font-style: normal;
 font-weight: 400;
 line-height: 90%;
@@ -854,7 +854,7 @@ text-align: left;
 }
 
 .up-content p {
-  font-size: 20px;
+  font-size: 14px;
   margin-bottom: 0;
 }
 
@@ -941,7 +941,7 @@ text-align: left;
     margin: 0px;
   }
   #first h2 {
-    font-size: 2em;
+    font-size: 1em;
   }
   #first button {
     max-height: 44px;
@@ -967,7 +967,7 @@ text-align: left;
   display: none ;
 }
 #p1.pcss h5 {
-  font-size: 22px;
+  font-size: 14px;
 }
 
 label, span {

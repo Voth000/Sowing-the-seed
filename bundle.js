@@ -495,6 +495,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function(){
+  var aboutBtn = document.getElementById("aboutProjectBtn");
+  if(aboutBtn){
+    aboutBtn.addEventListener("click", showAlert);
+  }
+  var overlay = document.getElementById("overlay");
+  if(overlay) {
+    overlay.addEventListener("click", hideAlert);
+  }
+});
+
 
 /////
 
@@ -529,15 +540,32 @@ document.getElementById('refreshButton').addEventListener('click', () => {
 
 /////
 function showAlert() {
-  // Display the overlay and the pop-up box
-  document.getElementById('overlay').style.display = 'block';
-  document.getElementById('popup').style.display = 'block';
+  var popDiv = document.getElementById('pop');
+  var popup = document.getElementById('popup');
+  var overlay = document.getElementById('overlay');
+  if(popDiv) {
+    popDiv.style.display = 'block';
+    popDiv.style.zIndex = '10000';
+  }
+  if(overlay) {
+    overlay.style.display = 'block';
+    overlay.style.zIndex = '10001';
+  }
+  if(popup) {
+    popup.style.display = 'block';
+    popup.style.zIndex = '10002';
+  }
 }
-
 function hideAlert() {
-  // Hide the overlay and the pop-up box
-  document.getElementById('overlay').style.display = 'none';
-  document.getElementById('popup').style.display = 'none';
+  var popDiv = document.getElementById('pop');
+  var popup = document.getElementById('popup');
+  var overlay = document.getElementById('overlay');
+  if(overlay) overlay.style.display = 'none';
+  if(popup) popup.style.display = 'none';
+  if(popDiv) {
+    popDiv.style.display = '';
+    popDiv.style.zIndex = '';
+  }
 }
 
 /////
