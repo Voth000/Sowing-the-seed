@@ -5,10 +5,10 @@
 :root {
   --col: 255, 255, 255; /* Default color (white) */
   --border: 0px;
-  --bg: rgba(255, 255, 255, 0.35);
-  --fil:  blur(20px);
-  --eff: box-shadow: 0px 4px 4px 0px rgba(116, 116, 116, 0.25);
---bor: 0.5px solid rgba(191, 191, 191, 0.77);
+  --bg: rgba(255, 255, 255, 0.2);
+  --fil:  blur(4px);
+  --eff: box-shadow: 0px 4px 4px 0px rgba(116, 116, 116, 0.15);
+--bor: 0.5px solid rgba(191, 191, 191, 0.525);
 --ttx: rgb(240, 240, 240);
 }
  
@@ -62,7 +62,7 @@ transform: translate(-50%, -50%);
     position: absolute;
    color: var(--ttx);
    background: linear-gradient(to bottom right, rgba(var(--col), 0.91) 5%, rgba(var(--col), 0.00) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(var(--col), 0.91) 5%, rgba(var(--col), 0.00) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(var(--col), 0.91) 5%, rgba(var(--col), 0.00) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(var(--col), 0.91) 5%, rgba(var(--col), 0.00) 50%) top right / 50% 50% no-repeat;
-font-size: 14px;
+font-size: 18px;
      /* Center the rectangle on the head */
 }
 .input_video {
@@ -102,12 +102,13 @@ img {
 }
 
 html {
-  font-family:  monospace;
+
   overflow: hidden;
 }
 
 body {
-
+  font-family: 'Poiret One', sans-serif;
+  letter-spacing: 0.25px;
   display: grid;
   grid-template-columns: 4% 1fr;
   position: absolute;
@@ -135,7 +136,7 @@ form {
 
   .a4 span {
    
-    font-size: 14px;
+    font-size: 18px;
     padding: 8px;
     border-radius: var(--border);
     background-color: var(--bg);
@@ -150,7 +151,7 @@ color: var(--ttx);
     color: var(--ttx);
     padding: 4px !important;
     width: 60%;
-    font-size: 14px;
+    font-size: 18px;
 
   }
 
@@ -172,7 +173,7 @@ left: 20%;
   
   
   textarea#textInput {
-    font-size: 14px;
+    font-size: 18px;
     border: 1px solid rgba(201, 200, 200, 0.819);
     border-radius: var(--border);
     resize: none;
@@ -220,9 +221,9 @@ backdrop-filter: var(--fil);
   }
 
   button {
-
-    font-family:  monospace;
-    outline: #bdd9f3ae 1px solid;
+letter-spacing: 0.5px;
+  font-family: 'Poiret One', sans-serif;
+font-weight: bold;
     border-radius: var(--border);
     border: none;
     color: rgb(0, 0, 0);
@@ -476,7 +477,7 @@ input[type=range]::-webkit-slider-thumb {
 
 
 h5 {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--ttx);
   position: relative;
   margin: 0px !important;
@@ -536,7 +537,7 @@ height: 100%;
 }
 
 label, span {
-  font-size: 12px;
+  font-size: 18px;
 color: rgb(0, 0, 0);
 }
 
@@ -545,7 +546,7 @@ label {
 }
 
 #p1.pcss h5 {
-  font-size: 14px;
+  font-size: 18px;
   word-break: break-all;
 }
 
@@ -652,7 +653,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .switch, h4 {
-  font-size: 12px;
+  font-size: 18px;
   padding: 0;
   margin: 0px;
   color: rgb(0 156 255);
@@ -706,11 +707,11 @@ button#bhn {
 }
 #social button {
   font-size: 10px;
-  color: rgb(0 0 0 / 40%);
+  color: rgb(86 86 86);
 }
 
 #social h5 {
-  font-size: 14px;
+  font-size: 18px;
  padding-bottom: 2px !important;
 }
 
@@ -764,7 +765,7 @@ color: var(--ttx);
 
 .popup span {
   line-height: 20px;
-font-size: 14px;
+font-size: 18px;
 color: var(--ttx);
 }
 
@@ -776,7 +777,7 @@ color: var(--ttx);
 }
 
 #gth span {
-  font-size: 14px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.415);
 }
 
@@ -787,22 +788,18 @@ color: var(--ttx);
 
 #first {
   margin: 0px 0px 0px 12px;
-   
     background-blend-mode: luminosity;
-  
-
-    
 border-radius: var(--border);
   width: 8%;
   position: absolute;
   z-index: 3;
-  padding: 4em;
+  padding: 2em;
   display: grid;
   grid-gap: 1em;
 }
 
 #first h2 {
-  font-size: em;
+  font-size: 3em;
 font-style: normal;
 font-weight: 400;
 line-height: 90%;
@@ -854,7 +851,7 @@ text-align: left;
 }
 
 .up-content p {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 0;
 }
 
@@ -935,6 +932,8 @@ text-align: left;
     top: 12%;
   }
   #first {
+    padding: 0.5em;
+    grid-gap: 0.5em;
     align-items: start;
     grid-template-columns: auto 1px;
         width: auto;
@@ -967,7 +966,7 @@ text-align: left;
   display: none ;
 }
 #p1.pcss h5 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 label, span {
@@ -996,7 +995,7 @@ button {
 }
 .popup span {
   line-height: 14px;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 }
@@ -1053,7 +1052,7 @@ button {
     gap: 4px;
   }
   textarea#textInput {
-    font-size: 12px;
+    font-size: 18px;
   }
   #img1{
     max-width: unset;
@@ -1110,3 +1109,6 @@ backdrop-filter: var(--fil);
   opacity: 1;
   pointer-events: auto;
 } 
+
+h1, h2, h3, h4, h5 {
+  text-shadow: rgb(171 171 171) -1px -1px 8px, rgb(182 182 182) -1px -1px 14px, rgb(139 139 139) -1px -1px 30px }

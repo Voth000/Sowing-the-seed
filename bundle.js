@@ -24,12 +24,12 @@ function hidePopup() {
 // Show the popup initially
 showPopup();
 
-let countdownValue = 8;
+let countdownValue = 7;
 const upContent = popup.querySelector('.up-content');
 function updatePopupCountdownText(val) {
   upContent.innerHTML = '<h2>Thank you for visiting your own flower garden</h2>' +
     '<p>The experience will start in <span id="up-countdown">' + val + '</span> seconds.</p>' +
-    '<p>After that, you could click on the your 3D model or move your head around to start the experienct!</p>';
+    '<p>After that, you could click on the your 3D model or move your head around to explore!</p>';
 }
 updatePopupCountdownText(countdownValue);
 const popupInterval = setInterval(() => {
@@ -72,7 +72,7 @@ composer.addPass(renderScene);
 
   const bloomPass = new UnrealBloomPass(
     new THREE.Vector2(window.innerWidth, window.innerHeight),
-    0.6,  // Bloom strength
+    0.9,  // Bloom strength
     1,  // Bloom radius
     0.85  // Bloom threshold
   );
@@ -819,5 +819,5 @@ initializeStars();
 // Create initial scribbles
 
 // Adjust on window resize
-window.addEventListener('resize', resizeCanvas);
+window.addEventListener('resize', throttledRedraw);
 
